@@ -5,10 +5,3 @@
 .font{
     font-family: 'Crimson Text', serif;
 }
-
-#container {
-  margin: 20px;
-  width: 200px;
-  height: 200px;
-  position: relative;
-}
