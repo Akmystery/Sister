@@ -5,3 +5,36 @@
 .font{
     font-family: 'Crimson Text', serif;
 }
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-size: 12px;
+  color: #fff;
+  line-height: 100px;
+  text-align: center;
+  background: #333333
+}
+
+.circleOne {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  font-size: 12px;
+  color: #fff;
+  line-height: 200px;
+  text-align: center;
+  background: #333333
+}
+
+.circleTwo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  font-size: 12px;
+  color: #fff;
+  line-height: 150px;
+  text-align: center;
+  background: #333333
+}
