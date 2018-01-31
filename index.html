@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-toggleable-sm pt-1 pb-2" id="navbar" style="background-color: #f2f2f2">
+    <nav class="navbar navbar-toggleable-sm pt-1 pb-0 fixed-top hidden-md-down" id="navbar" style="background-color: #f2f2f2">
         <div class="container justify-content-center" style="background-color: #d9d9d9">
         <a class="nav-item nav-link font_menu mr-5 pr-5" href="#home" style = "color:slategrey">Home</a>
         <a class="nav-item nav-link font_menu pr-5 mr-5" href="#about" style = "color:slategrey">About Me</a>
@@ -22,9 +22,19 @@
         <a class="nav-item nav-link font_menu" href="#contact" style = "color:slategrey">Contact</a>
         </div> <!-- container -->
     </nav> <!-- nav -->
+    
+  <div id="mySidenav" class="sidenav hidden-lg-up">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+  <a href="#home">Home</a>
+  <a href="#about">About Me</a>
+  <a href="#education">Education</a>
+  <a href="#experience">Experience</a>
+  <a href="#contact">Contact</a>
+ </div>
+ <span onclick="openNav()" class="fixed-top container hidden-lg-up" style="font-size:32px"><i class="fa fa-bars" aria-hidden="true"></i></span>
 
 <section id="home" style="background-color: #f2f2f2">
-    <div class = "container pt-1 pb-3">
+    <div class = "container pt-5 pb-3">
     <h1 class="text-center font" style="color:#262626; font-style: italic">Hi! I'm Sandi</h1>
     <p class="text-center font" style="color: #808080">- Elegant Civil Engineer -</p>
     <div  class="text-center">
@@ -69,25 +79,38 @@
     <div class="container pt-3">
         <h2 class="text-center mb-5 font" style="color: #262626">Education</h2>
         <div class="row mb-4 justify-content-center">
-            <div class="col-1"></div>
-            <div class="col-5">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5 hidden-md-down">
             <img src="images/UOA.png" style="width: 300px; height: 90px">
             </div>
-            <div class="col-5">
+            <div class="col-lg-5 hidden-md-down">
                 <h3 class="font"><b>University of Auckland</b></h3>
                 <p class="font mb-0" style="font-size:20px">Bachelor of Engineering(Civil)</p>
                 <p class="font" style="font-size:20px">2013-2017</p>
             </div>
+            
+             <div class="col-lg-5 hidden-lg-up">
+                <h3 class="font text-center"><b>University of Auckland</b></h3>
+                <p class="font mb-0 text-center" style="font-size:20px">Bachelor of Engineering(Civil)</p>
+                <p class="font text-center" style="font-size:20px">2013-2017</p>
+            </div>
+            
         </div><!-- row -->
         <div class="row justify-content-center">
-            <div class="col-1"></div>
-            <div class="col-5">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5 hidden-md-down">
             <img src="images/NP.png" style="width: 250px; height: 60px">
             </div>
-            <div class="col-5">
+            <div class="col-lg-5 hidden-md-down">
                 <h3 class="font"><b>Ngee Ann Polytechnic</b></h3>
                 <p class="font mb-0" style="font-size:20px">Diploma in Electronic And Computer Engineering</p>
                 <p class="font" style="font-size:20px">2009-2011</p>
+            </div>
+            
+            <div class="col-lg-5 hidden-lg-up">
+                <h3 class="font text-center"><b>Ngee Ann Polytechnic</b></h3>
+                <p class="font mb-0 text-center" style="font-size:20px">Diploma in Electronic And Computer Engineering</p>
+                <p class="font text-center" style="font-size:20px">2009-2011</p>
             </div>
         </div><!-- row -->
     </div><!-- container -->
@@ -104,7 +127,7 @@
     <div class="container pt-3">
         <h2 class="text-center mb-5 font" style="color: #262626">Contact Information</h2>
         <div class="row">
-            <div class="col">
+            <div class="col"> 
                 <p class="font text-center" style="font-size: 20px">Home Address:</p>
                 <p class="font text-center" style="font-size: 20px">Phone Number:</p>
             </div>
@@ -118,4 +141,18 @@
     </div><!-- container -->
 </section>
 </body>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
 </html>
